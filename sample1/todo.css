@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 定义滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+/* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+    border-radius: 10px;
+    background-color: #272d44;
+} */
+
+/*定义滑块 内阴影+圆角*/
+/* ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+    background-color: rgba(240, 240, 240, 0.5);
+}  */
+
+
+.container {
+    width: 800px;
+    height: 700px;
+    margin: 100px auto;
+    /* background-color: pink; */
+    overflow: hidden;
+    border: 1px solid rgb(223, 223, 22);
+    border-radius: 5%;
+    overflow-y: scroll;
+}
+
+/* header */
+.header {
+    /* width: auto; */
+    height: 100px;
+    margin: 10px 15px;
+    /* background-color: skyblue; */
+}
+
+/* header-left */
+.header .header-left {
+    float: left;
+}
+
+.myday {
+    margin-top: 5px;
+}
+
+/* header-right  */
+.header .header-right {
+    margin-top: 20px;
+    float: right;
+}
+
+/* 模板 */
+.template {
+    display: none;
+}
+
+/* new-task */
+.new-task {
+    margin: 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.new-task .icon-plus {
+    font-size: 30px;
+    color: #a5a5a5;
+    vertical-align: middle;
+}
+
+/* input */
+.new-task input {
+    width: 670px;
+    height: 30px;
+    color: #a5a5a5;
+    outline: none;
+    border: 0;
+    padding-left: 11px;
+}
+
+input:placeholder-shown {
+    font-size: 1em;
+}
+
+/* 代办 and 已做 todo-item*/
+.todo-list .todo-item,
+.done-list .todo-item {
+    margin: 0 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+/* 小圆圈 和 星号 */
+.todo-list .todo-item span:first-child,
+.todo-list .todo-item span:last-child,
+.done-list .todo-item span:first-child,
+.done-list .todo-item span:last-child {
+    display: block;
+    /* height: 100%; */
+    /* line-height: 100%; */
+    font-size: 20px;
+}
+
+/* todo-list 小圆圈 */
+.todo-list .todo-item span:first-child {
+    float: left;
+    color: rgb(212, 55, 55);
+}
+
+/* todo-list 星号 */
+.todo-list .todo-item span:last-child {
+    float: right;
+    color: rgb(212, 55, 55);
+}
+
+/* todo-content */
+.todo-list .todo-item .todo-content,
+.done-list .todo-item .todo-content {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* .todo-list and .done-list */
+/* todo-content > todo-text and todo-type */
+/* todo-text */
+.todo-list .todo-content .todo-text,
+.done-list .todo-content .todo-text {
+    font-size: 17px;
+    color: #696969;
+}
+
+/* todo-type */
+.todo-list .todo-content .todo-type,
+.done-list .todo-content .todo-type {
+    font-size: 12px;
+    color: #696b71;
+    /* transform-origin: 0 0; */
+    /* transform: scale(0.8); */
+}
+
+/* done-list */
+/* done-list 圆圈 */
+.done-list .todo-item span:first-child {
+    float: left;
+    color: rgb(49, 151, 191);
+}
+
+/* done-list 星号 */
+.done-list .todo-item span:last-child {
+    float: right;
+    color: rgb(49, 151, 191);
+}
+
+/* .todo-text 加删除线 */
+.done-list .todo-content .todo-text {
+    text-decoration: line-through double #333;
+}
